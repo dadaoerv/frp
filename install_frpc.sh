@@ -20,9 +20,9 @@ rm -rf frp_${FRP_VERSION}_linux_amd64.tar.gz frp_${FRP_VERSION}_linux_amd64
 echo "Configuring frp..."
 sudo tee $FRP_INSTALL_DIR/frpc.ini > /dev/null << EOL
 [common]
-server_addr = 101.42.151.229
+server_addr = 101.42.151.222
 server_port = 7000
-token = aaa999999
+token = 123456
 
 [ssh]
 type = tcp
