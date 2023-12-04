@@ -13,10 +13,12 @@ cd /root/frp
 token：123456   
 如果你需要修改端口，密码（token）等，运行下一步修改，不需要跳过。
 ```
+ cd /root/frp
  vim frps.ini
 ```
 然后运行：
 ```
+ chmod +x frps
  ./frps -c ./frps.ini
 ##如果报错，运行下面的
  ./root/frp/frps -c /root/frp/frps.ini
@@ -35,6 +37,7 @@ frpc常用端口都写了，修改你的ip和token即可
 ```
 然后运行：
 ```
+ chmod +x frpc
  ./frpc -c ./frpc.ini
 ##如果报错，运行下面的
  ./root/frp/frpc -c /root/frp/frpc.ini
