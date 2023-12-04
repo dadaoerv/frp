@@ -15,13 +15,13 @@ bind_port = 7000
 # 面板端口
 dashboard_port = 7810
 # 登录面板账号设置
-dashboard_user = dadaoerv
-dashboard_pwd = aaa999999
+dashboard_user = admin  
+dashboard_pwd = 123456
 # 设置http及https协议下代理端口（非重要）
 vhost_http_port = 7080
 vhost_https_port = 7081
 # 身份验证
-token = aaa999999
+token = 123456
 EOF
 
 # 移动frp文件到目标位置
