@@ -13,6 +13,12 @@ cat <<EOF > frpc.ini
 server_addr = 101.42.151.229
 server_port = 7000
 token = aaa999999
+
+[ssh]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remote_port = 2288
 EOF
 
 # 移动frp文件到目标位置
