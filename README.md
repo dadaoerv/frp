@@ -44,3 +44,4 @@ sudo systemctl daemon-reload
 sudo systemctl start frpc.service
 sudo systemctl enable frpc.service
 ```
+# 如果你安装多个终端（机器），那么记得frpc.toml文件里的名字和端口都需要改
