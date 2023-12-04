@@ -14,14 +14,14 @@ token：123456
 如果你需要修改端口，密码（token）等，运行下一步修改，不需要跳过。
 ```
  cd /root/frp
- vim frps.ini
+ vim frps.toml
 ```
 然后运行：
 ```
  chmod +x frps
- ./frps -c ./frps.ini
+ ./frps -c ./frps.toml
 ##如果报错，运行下面的
- ./root/frp/frps -c /root/frp/frps.ini
+ ./root/frp/frps -c /root/frp/frps.toml
 ```
 如果运行成功了，就可以用终端ssh连接后，开启下面的开机自运行：
 ```
@@ -33,14 +33,14 @@ sudo systemctl enable frps.service
 # 客户端：   
 frpc常用端口都写了，修改你的ip和token即可
 ```
- vim frpc.ini
+ vim frpc.toml
 ```
 然后运行：
 ```
  chmod +x frpc
- ./frpc -c ./frpc.ini
+ ./frpc -c ./frpc.toml
 ##如果报错，运行下面的
- ./root/frp/frpc -c /root/frp/frpc.ini
+ ./root/frp/frpc -c /root/frp/frpc.toml
 ```
 如果运行成功了，就可以用终端ssh连接后，开启下面的开机自运行：
 ```
