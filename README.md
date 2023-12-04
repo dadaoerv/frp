@@ -13,7 +13,6 @@ cd /root/frp
 token：123456   
 如果你需要修改端口，密码（token）等，运行下一步修改，不需要跳过。
 ```
- cd /root/frp
  vim frps.toml
 ```
 然后运行：
