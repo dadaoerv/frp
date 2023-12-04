@@ -19,8 +19,6 @@ token：123456
 ```
  chmod +x frps
  ./frps -c ./frps.toml
-##如果报错，运行下面的
- ./root/frp/frps -c /root/frp/frps.toml
 ```
 开启frps服务端开机自运行：
 ```
@@ -38,8 +36,6 @@ frpc常用端口都写了，修改你的ip和token即可
 ```
  chmod +x frpc
  ./frpc -c ./frpc.toml
-##如果报错，运行下面的
- ./root/frp/frpc -c /root/frp/frpc.toml
 ```
 如果运行成功了，就可以用终端ssh连接后，开启下面的开机自运行：
 ```
