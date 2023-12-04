@@ -5,7 +5,7 @@ git clone https://github.com/dadaoerv/frp.git
 cd /root/frp
 ```
 
-服务端:
+# 服务端:   
 默认：7000端口
 管理员：admin
 密码：123456
@@ -27,7 +27,8 @@ sudo systemctl daemon-reload
 sudo systemctl start frps.service
 sudo systemctl enable frps.service
 ```
-客户端：frpc常用端口都写了，修改你的ip和token即可
+# 客户端：   
+frpc常用端口都写了，修改你的ip和token即可
 ```
  vim frpc.ini
 ```
