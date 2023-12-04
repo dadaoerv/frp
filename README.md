@@ -1,5 +1,5 @@
 # 安装frp服务
-
+必须在root目录下，如果没有，自己修改
 ```
 git clone https://github.com/dadaoerv/frp.git
 cd /root/frp
@@ -22,7 +22,7 @@ token：123456
 ##如果报错，运行下面的
  ./root/frp/frps -c /root/frp/frps.toml
 ```
-如果运行成功了，就可以用终端ssh连接后，开启下面的开机自运行：
+开启frps服务端开机自运行：
 ```
 cp /root/frp/frps.service /etc/systemd/system/frps.service
 sudo systemctl daemon-reload
