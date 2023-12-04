@@ -8,23 +8,26 @@ cd frp_0.52.3_linux_amd64
 
 # 创建frp服务配置文件
 echo "正在创建frp服务配置文件..."
-cat <<EOF > frpc.ini
+cat <<EOF > frps.ini
 [common]
-server_addr = 101.42.151.229
-server_port = 7000
+# 监听端口
+bind_port = 7000
+# 面板端口
+dashboard_port = 7810
+# 登录面板账号设置
+dashboard_user = dadaoerv
+dashboard_pwd = aaa999999
+# 设置http及https协议下代理端口（非重要）
+vhost_http_port = 7080
+vhost_https_port = 7081
+# 身份验证
 token = aaa999999
-
-[ssh]
-type = tcp
-local_ip = 127.0.0.1
-local_port = 22
-remote_port = 2288
 EOF
 
 # 移动frp文件到目标位置
 echo "正在安装frp服务..."
-sudo mv frpc /usr/local/bin
-sudo mv frpc.ini /etc/frp
+sudo mv frps /usr/local/bin
+sudo mv frps.ini /etc/frp
 
 # 创建frp服务文件
 echo "正在创建frp服务文件..."
@@ -34,7 +37,7 @@ Description=frp Service
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/frpc -c /etc/frp/frpc.ini
+ExecStart=/usr/local/bin/frps -c /etc/frp/frps.ini
 Restart=on-failure
 User=root
 
