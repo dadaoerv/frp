@@ -3,7 +3,7 @@ Description=frp Service
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/frps -c /etc/frp/frps.ini
+ExecStart=/root/frp/frps -c /root/frp/frps.ini
 Restart=on-failure
 User=root
 
